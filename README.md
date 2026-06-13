@@ -52,21 +52,11 @@ sudo apt install yersinia -y
 
 Documentación de la Red
 
-Topología
+![Topologia](topologia.png)
 
-                    Router-Alvaro
-                    (20.21.11.1)
-                         |
-                      Gi0/1 | Et0/0
-                         |
-                        IOU2
-                       (Switch)
-                    /          \
-                Et0/1          Et0/2
-                  |              |
-              Attack           Victima
-           (20.21.11.50)    (20.21.11.52)
-               Eth0              Eth0
+
+
+                   
 
 Direccionamiento IP
 
