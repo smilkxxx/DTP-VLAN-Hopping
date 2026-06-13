@@ -52,7 +52,7 @@ sudo apt install yersinia -y
 
 Documentación de la Red
 
-![Topologia](topologia.png)
+![Topologia](Capturas/topologia.png)
 
 
 
