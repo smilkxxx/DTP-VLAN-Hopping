@@ -99,7 +99,7 @@ interface Et0/1
  switchport mode dynamic desirable
  no switchport nonegotiate
 
-Mostrar imagen
+![Antes](dtp_antes.png)
 
 
 El puerto muestra Administrative Mode: static access y Negotiation of Trunking: Off — este es el estado de referencia antes de hacer vulnerable el puerto.
@@ -112,7 +112,7 @@ Durante el ataque — Yersinia negociando trunk
 bash# En Kali (Atacante)
 sudo yersinia dtp -attack 1 -interface eth0
 
-Mostrar imagen
+![Durante](dtp_durante.png)
 
 
 Yersinia detecta vecinos DTP. Se observa el cambio de estado ACCESS/DESIRABLE a TRUNK/DESIRABLE, confirmando que el puerto fue convertido a trunk exitosamente.
@@ -127,7 +127,7 @@ interface Et0/1
  switchport mode access
  switchport nonegotiate
 
-Mostrar imagen
+![Despues](dtp_despues.png)
 
 
 Con la contramedida aplicada, el puerto vuelve a static access y Negotiation of Trunking: Off. Yersinia ya no puede negociar trunk.
